@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <label for="user-date" class="data">INSIRA A DATA:</label>
+            <input type="datetime-local" id="user-date" class="wrapper">
+            <button class="start-button" onclick="startCountdown()">Iniciar Contagem</button>
+            <p>CONTAGEM REGRESSIVA:</p>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Dias</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Horas</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutos</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Segundos</span>
+                </div>
+            </div>
+        </div>
+        <img src="images/retrowave-sun-with-alpha-background-vaporwave-png-27-removebg-preview.png" class="rocket">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

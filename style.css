@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/portada-vaperwave.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.content {
+    top: 50%;
+    left: 1%;
+    position: absolute;
+    transform: translateY(-50%);
+    color:aqua;
+    text-align: left;
+}
+
+
+
+.content p {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px; 
+}
+
+.content h1 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.launch-time {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.launch-time div {
+    flex-basis: 140px;
+    text-align: left;
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+
+.content .start-button {
+    background-color: aqua;
+    color:black;
+    font-size: 10px;
+    padding: 10px 20px;
+    border: 1px solid #dc38be;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: left;
+}
+.content .start-button:hover{
+    background: aquamarine;
+    border: #5032bc;
+}
+
+
+.wrapper {
+    border-radius: 10px;
+    backdrop-filter: blur(20);
+    -webkit-backdrop-filter: blur(20);
+    font-size: 11px;
+    color: aqua;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid aqua;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; 
+}
+
+.data {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.wrapper ::before {
+    color: #5032bc;
+}
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 2;
+    }
+}
